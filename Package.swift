@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "CarbonKit",
     platforms: [
-        .iOS(.v11) // Specify the minimum iOS version your package supports
+        .iOS(.v11) // Tentukan versi iOS minimum yang didukung oleh paket Anda
     ],
     products: [
         .library(
@@ -18,10 +18,8 @@ let package = Package(
     targets: [
         .target(
             name: "CarbonKit",
-            dependencies: [], // List any external dependencies your package has
             path: "CarbonKit",
             sources: [
-                "CarbonKit.h"
             ],
             publicHeadersPath: "."
         )
