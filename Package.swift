@@ -20,6 +20,7 @@ let package = Package(
             name: "CarbonKit",
             path: "CarbonKit",
             sources: [
+                "CarbonSwipeRefresh.h"
             ],
             publicHeadersPath: "."
         )
