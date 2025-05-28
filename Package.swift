@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "CarbonKit",
     platforms: [
-        .iOS(.v11) // Tentukan versi iOS minimum yang didukung oleh paket Anda
+        .iOS(.v11) // Specify the minimum iOS version your package supports
     ],
     products: [
         .library(
@@ -12,17 +12,17 @@ let package = Package(
             targets: ["CarbonKit"]
         ),
     ],
-    dependencies: [
-        // Add any external dependencies here
-    ],
     targets: [
         .target(
             name: "CarbonKit",
             path: "CarbonKit",
             sources: [
-                "CarbonSwipeRefresh.h"
+                "CarbonSwipeRefresh.h",
+                "CarbonTabSwipeNavigation.h",
+                "CarbonTabSwipeScrollView.h",
+                "CarbonTabSwipeSegmentedControl.h"
             ],
-            publicHeadersPath: "."
+            publicHeadersPath: ".", // Make all headers in the CarbonKit directory public
         )
     ]
 )
