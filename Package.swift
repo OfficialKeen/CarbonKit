@@ -16,6 +16,9 @@ let package = Package(
         .target(
             name: "CarbonKit",
             path: "CarbonKit"
+            sources: [
+                "CarbonKit/CarbonKit.h"
+            ]
         )
     ]
 )
