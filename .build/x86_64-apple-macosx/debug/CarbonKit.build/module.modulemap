@@ -1,4 +1,0 @@
-module CarbonKit {
-    umbrella header "/Users/keenoi/iOS/Olsera/Fork/CarbonKit/CarbonKit/CarbonKit.h"
-    export *
-}

@@ -17,12 +17,8 @@ let package = Package(
             name: "CarbonKit",
             path: "CarbonKit",
             sources: [
-                "CarbonSwipeRefresh.h",
-                "CarbonTabSwipeNavigation.h",
-                "CarbonTabSwipeScrollView.h",
-                "CarbonTabSwipeSegmentedControl.h"
-            ],
-            publicHeadersPath: ".", // Make all headers in the CarbonKit directory public
+                "CarbonKit.h"
+            ]
         )
     ]
 )
