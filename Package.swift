@@ -18,6 +18,9 @@ let package = Package(
             path: "CarbonKit",
             sources: [
                 "CarbonKit.h"
+            ],
+            cSettings: [
+                .headerSearchPath("CarbonKit")
             ]
         )
     ]
