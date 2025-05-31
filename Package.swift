@@ -1,10 +1,10 @@
-// swift-tools-version:5.3
+// swift-tools-version:6.1
 import PackageDescription
 
 let package = Package(
     name: "CarbonKit",
     platforms: [
-        .iOS(.v11) // Specify the minimum iOS version your package supports
+        .iOS(.v12) // Specify the minimum iOS version your package supports
     ],
     products: [
         .library(
@@ -18,7 +18,8 @@ let package = Package(
             path: "CarbonKit",
             sources: [
                 "CarbonKit.h"
-            ]
+            ],
+            publicHeadersPath: "include"
         )
     ]
 )
