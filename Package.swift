@@ -17,9 +17,9 @@ let package = Package(
             name: "CarbonKit",
             path: "CarbonKit",
             sources: [
-                "CarbonKit.h"
+                "include/CarbonKit.h" // Adjust the path to the new location
             ],
-            publicHeadersPath: "include"
+            publicHeadersPath: "include" // Specify the public headers directory
         )
     ]
 )

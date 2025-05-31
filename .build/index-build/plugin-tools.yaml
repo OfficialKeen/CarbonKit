@@ -1,0 +1,22 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "CarbonKit-arm64-apple-macosx15.0-debug.module": ["<CarbonKit-arm64-apple-macosx15.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": []
+  "test": []
+default: "main"
+nodes:
+  "/Users/keenoi/iOS/Olsera/Fork/CarbonKit/CarbonKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/keenoi/iOS/Olsera/Fork/CarbonKit/CarbonKit/","/Users/keenoi/iOS/Olsera/Fork/CarbonKit/Package.swift","/Users/keenoi/iOS/Olsera/Fork/CarbonKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
